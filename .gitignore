@@ -1,0 +1,8 @@
+.env
+.*.un~
+.*.swp
+.DS_Store
+.sass-cache
+.jhw-cache
+.pomo
+public/css

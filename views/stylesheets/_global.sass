@@ -1,0 +1,25 @@
+@mixin fixed-image
+  position: fixed
+  top: 0
+  bottom: 0
+  right: 0
+  left: 0
+
+@mixin full-background($url)
+  background: url($url)
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+  @include fixed-image
+  z-index: -1
+ 
+.photo-cover
+  @include full-background('/images/cover.jpg')
+
+.photo-join
+  @include full-background('/images/join.jpg')
+
+.linen
+  @include fixed-image
+  background: url('/images/linen.jpg')
